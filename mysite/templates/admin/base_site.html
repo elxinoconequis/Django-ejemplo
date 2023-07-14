@@ -2,8 +2,8 @@
 
 {% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
 
+<!-- Podemos así cambiar el título de nombre del sitio (más no su dominio)-->
 {% block branding %}
-<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Administration JFOS</a></h1>
 {% endblock %}
-
 {% block nav-global %}{% endblock %}

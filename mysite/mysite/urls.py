@@ -19,6 +19,8 @@ from django.urls import include, path
 urlpatterns = [
     path("polls/",include("polls.urls")),
     path("admin/", admin.site.urls),
+    path("__debug__/", include("debug_toolbar.urls")), # this is part of use third party pacakages
+    # This example uses the __debug__ prefix, but you can use any prefix that doesn’t clash with your application’s URLs.
 ]
 
 # The include() function allows referencing other URLconfs. Whenever Django encounters include(), it chops off whatever part of the URL matched up to that point and sends the remaining string to the included URLconf for further processin
